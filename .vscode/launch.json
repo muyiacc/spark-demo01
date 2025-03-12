@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "JavaBaseRDD01",
+            "request": "launch",
+            "mainClass": "cc.seektao.spark.core.JavaBaseRDD01",
+            "projectName": "spark-demo01",
+            "vmArgs": "--add-exports java.base/sun.security.action=ALL-UNNAMED --add-exports java.base/sun.nio.ch=ALL-UNNAMED --add-exports java.base/sun.util.calendar=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED"
+        },
+        {
+            "type": "scala",
+            "request": "launch",
+            "name": "Run Scala",
+            "mainClass": "${input:selectMainClass}",
+            "args": [],
+            "jvmOptions": [
+                "--add-exports=java.base/sun.nio.ch=ALL-UNNAMED",
+                "--add-exports=java.base/sun.util.calendar=ALL-UNNAMED",
+                "--add-opens=java.base/java.util=ALL-UNNAMED",
+                "--add-opens=java.base/java.nio=ALL-UNNAMED",
+                "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED"
+            ],
+            "env": {}
+        }
+    ],
+    "inputs": [
+        {
+            "id": "selectMainClass",
+            "type": "pickString",
+            "description": "选择主类",
+            "options": [
+                "cc.seektao.spark.sql.SparkSql01",
+                "cc.seektao.spark.sql.SparkSql02",
+                "cc.seektao.spark.sql.SparkSql03",
+                "cc.seektao.spark.core.SparkCore01",
+                "cc.seektao.spark.sql.exer.Exer01"                
+            ],
+            "default": "cc.seektao.spark.sql.SparkSql01"
+        },
+        {
+            "id": "inputMainclass",
+            "type": "promptString",
+            "description": "输入主类名 (例如: cc.seektao.spark.sql.MyClass):",
+            "default": "cc.seektao.spark.sql.SparkSql01"
+        },
+    ]
+}

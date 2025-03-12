@@ -1,0 +1,8 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.debug.settings.vmArgs": "--add-exports java.base/sun.nio.ch=ALL-UNNAMED"
+}

@@ -1,0 +1,94 @@
+# Compiled output
+/target/
+/out/
+/dist/
+
+# IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.settings/
+.project
+bin/
+
+# Netbeans
+/nbproject/private/
+/build/
+/dist/
+/nbdist/
+
+# sbt specific
+/project/target/
+/project/boot/
+/lib_managed/
+/src_managed/
+/target/resolution-cache/
+/target/streams/
+/zinc/
+
+# Scala.js specific
+*-opt.js
+*-fastopt.js
+*-jsdeps.js
+*-launcher.js
+
+# Scala Native specific
+/native/target/
+
+# Coursier cache
+.coursier/cache/
+
+# Metals
+.metals/
+
+# Packaging/Distribution
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Logs
+*.log
+/logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
+\#*\#
+.*.swp
+.*.swo
+
+# Intellij Patch File
+*.patch
+
+# Ensime
+.ensime_cache
+
+# Mill
+.mill-build/
+out/
+
+# Ammonite
+.ammonite/
+
+# Bloop
+.bloop/
+
+# Gradle
+.gradle
+/build/
+
+# Maven
+/target/
+
+# Node.js
+node_modules/
+
+# Docker
+/Dockerfile
+/docker-compose.yml
