@@ -8,8 +8,8 @@ object SparkSql02 {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf()
       .setAppName("spark sql")
-      // .setMaster("local[*]")
-      .setMaster("local-cluster[8,1,512]")
+      .setMaster("local[*]")
+      // .setMaster("local-cluster[8,1,512]")
 
     val spark = SparkSession
       .builder()
@@ -26,7 +26,7 @@ object SparkSql02 {
   private def runBaseExample(spark: SparkSession) = {
     import spark.implicits._
     // Create an RDD of Person objects from a text file, convert it to a Dataframe
-    val file = "src/main/resources/people.txt"
+    val file = "data/people.txt"
     val peopleDF = spark.sparkContext
       .textFile(file)
       .map(_.split(","))

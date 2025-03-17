@@ -1,5 +1,5 @@
 # Compiled output
-/target/
+/**/target/
 /out/
 /dist/
 
@@ -84,7 +84,7 @@ out/
 /build/
 
 # Maven
-/target/
+/**/target/
 
 # Node.js
 node_modules/

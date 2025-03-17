@@ -43,22 +43,6 @@ object SparkSql01 {
   }
 
   def readJDBC(spark: SparkSession) = {
-
-    // val employeesSchema = StructType(
-    //   Seq(
-    //     StructField("employee_id", DataTypes.IntegerType),
-    //     StructField("first_name", DataTypes.StringType),
-    //     StructField("last_name", DataTypes.StringType),
-    //     StructField("email", DataTypes.StringType),
-    //     StructField("phone_number", DataTypes.StringType),
-    //     StructField("hire_date", DataTypes.DateType),
-    //     StructField("job_id", DataTypes.StringType),
-    //     StructField("salary", DataTypes.DoubleType),
-    //     StructField("commission_pct", DataTypes.DoubleType),
-    //     StructField("manager_id", DataTypes.IntegerType),
-    //     StructField("department_id", DataTypes.IntegerType)
-    //   )
-    // )
     val url = "jdbc:mysql://localhost:3306/atguigu"
     val table = "employees"
     val properties = new java.util.Properties()

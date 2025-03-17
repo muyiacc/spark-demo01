@@ -1,0 +1,7 @@
+<configuration>
+    <!-- 指定metastore服务的地址 -->
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://hadoop102:9083</value>
+    </property>
+</configuration>

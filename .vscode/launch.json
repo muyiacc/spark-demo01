@@ -20,7 +20,8 @@
                 "--add-exports=java.base/sun.util.calendar=ALL-UNNAMED",
                 "--add-opens=java.base/java.util=ALL-UNNAMED",
                 "--add-opens=java.base/java.nio=ALL-UNNAMED",
-                "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED"
+                "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED",
+                "--add-opens=java.base/java.net=ALL-UNNAMED"
             ],
             "env": {}
         }
@@ -34,8 +35,10 @@
                 "cc.seektao.spark.sql.SparkSql01",
                 "cc.seektao.spark.sql.SparkSql02",
                 "cc.seektao.spark.sql.SparkSql03",
+                "cc.seektao.spark.sql.SparkSqlReadHive",
                 "cc.seektao.spark.core.SparkCore01",
-                "cc.seektao.spark.sql.exer.Exer01"                
+                "cc.seektao.spark.core.exer.Exer01",
+                "cc.seektao.spark.sql.exer.Exer01",
             ],
             "default": "cc.seektao.spark.sql.SparkSql01"
         },

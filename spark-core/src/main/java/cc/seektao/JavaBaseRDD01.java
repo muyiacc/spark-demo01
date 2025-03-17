@@ -1,4 +1,4 @@
-package cc.seektao.spark.core;
+package cc.seektao;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
